@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# Archivos de compilación (donde se genera el JS)
+dist/
+build/
+
+# Archivos de configuración local y logs
+*.log
+.env
+.DS_Store
+
+# Carpetas de editores
+.vscode/
+.idea/
