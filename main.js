@@ -15,6 +15,13 @@
     };
 })();
 (() => {
+    class Mutant {
+        mutantPower(id) {
+            return this.name + ' ' + this.realName;
+        }
+    }
+})();
+(() => {
     const client = {
         name: 'Fernando',
         age: 25,
@@ -22,7 +29,10 @@
             id: 25,
             zip: 'KY2 SUD',
             city: 'Ottawa'
-        }
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        },
     };
     const client2 = {
         name: 'Melissa',
@@ -31,7 +41,16 @@
             city: 'Toronto',
             id: 120,
             zip: 'K2S U2A',
-        }
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        },
+    };
+})();
+(() => {
+    let addNumbersFunction;
+    addNumbersFunction = (a, b) => {
+        return 10;
     };
 })();
 //# sourceMappingURL=main.js.map
